@@ -1,18 +1,19 @@
-Willkommen zu der FFmpeg-Schule der Assembly-Sprache. Du hast den ersten Schritt gemacht auf der interessantesten, anfordernsten und belohnenden Reise ij der Programmierung. Diese Lektionen werden dir Grundlagen der Art und Weise, wie Assembly in FFMPEG geschrieben ist, geben, und werden dir die Augen öffnen, was in deinem Computer eigentlich so vor sich geht.
+Willkommen zu der FFmpeg-Schule der Assembly-Sprache. Du hast den ersten Schritt gemacht auf der interessantesten, anfordernsten und belohnenden Reise ij der Programmierung. Diese Lektionen werden dir Grundlagen der Art und Weise, wie Assembly in FFmpeg geschrieben ist, geben, und werden dir die Augen öffnen, was in deinem Computer eigentlich so vor sich geht.
 
-**Required Knowledge**
+**Erforderliche Kenntnisse**
 
-* Knowledge of C, in particular pointers. If you don't know C, work through [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) book  
-* High School Mathematics (scalar vs vector, addition, multiplication etc)
+* Kenntnisse in C, vor allem Pointer. Wenn du C nicht kennst, arbeite das [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language)-Buch durch  
+* High School Mathematics (Skalar vs Vektor, Addition, Multiplikation, etc.)
 
-**Lessons**
+**Lektionen**
 
-In this Git repository there are lessons and assignments (not uploaded yet) that correspond with each lessons. By the end of the lessons you'll be able to contribute to FFmpeg.
+In diesem Git-Repository gibt es Lektionen und assignments (noch nicht hochgeladen), die mit jeder Lektion korrespondieren. Am Ende der Lektion wirst du in der Lage sein, zu FFmpeg beizutragen zu können.
 
-A discord server is available to answer questions:
+Ein Discord-Server ist verfügbar, um Fragen zu beantworten:
 https://discord.com/invite/Ks5MhUhqfB
 
-**Translations**
+**Übersetzungen**
 
 * [Français](./README.fr.md)
 * [Spanish](./README.es.md)
+* [Deutsch](./README.de.md)
