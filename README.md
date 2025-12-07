@@ -1,3 +1,5 @@
+this project aima to translate the asm-lessons into German.
+
 Welcome to the FFmpeg School of Assembly Language. You have taken the first step on the most interesting, challenging, and rewarding journey in programming. These lessons will give you a grounding in the way assembly language is written in FFmpeg and open your eyes to what's actually going on in your computer.
 
 **Required Knowledge**
