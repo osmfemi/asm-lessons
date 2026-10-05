@@ -176,11 +176,13 @@ Los *shuffles*, también conocidos como permutaciones, son posiblemente la instr
 Para cada byte, el byte fuente correspondiente se usa como índice del registro destino, excepto cuando el MSB está activado: entonces el byte destino se pone a cero. Es análogo al siguiente código en C (aunque en SIMD las 16 iteraciones ocurren en paralelo):
 
 ```c
+uint8_t tmp[16];
+memcpy(tmp, dst, 16);
 for(int i = 0; i < 16; i++) {
     if(src[i] & 0x80)
         dst[i] = 0;
     else
-        dst[i] = dst[src[i]]
+        dst[i] = tmp[src[i]];
 }
 ```
 Aquí tienes un ejemplo simple en ensamblador:

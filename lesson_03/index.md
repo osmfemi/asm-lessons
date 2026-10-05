@@ -176,11 +176,13 @@ Shuffles, also known as permutes, are arguably the most important instruction in
 For each byte the corresponding source byte is used as an index of the destination register, except when the MSB is set the destination byte is zeroed. It’s analogous to the following C code (although in SIMD all 16 loop iterations happen in parallel):
 
 ```c
+uint8_t tmp[16];
+memcpy(tmp, dst, 16);
 for(int i = 0; i < 16; i++) {
     if(src[i] & 0x80)
         dst[i] = 0;
     else
-        dst[i] = dst[src[i]]
+        dst[i] = tmp[src[i]];
 }
 ```
 Here’s a simple assembly example:

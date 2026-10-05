@@ -176,11 +176,13 @@ Les mélanges (*shuffles*), également appelés permutations, sont sans doute l'
 Pour chaque byte, le byte source correspondant est utilisé comme un index dans le registre de destination, sauf lorsque le bit de poids fort (MSB) est activé, le byte de destination est mis à zéro. C'est l'analogue du code C suivant (bien que dans SIMD, les 16 itérations de boucle se produisent en parallèle) :
 
 ```c
+uint8_t tmp[16];
+memcpy(tmp, dst, 16);
 for(int i = 0; i < 16; i++) {
     if(src[i] & 0x80)
         dst[i] = 0;
     else
-        dst[i] = dst[src[i]]
+        dst[i] = tmp[src[i]];
 }
 ```
 
